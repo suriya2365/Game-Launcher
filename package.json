@@ -1,0 +1,22 @@
+{
+    "name": "game-launcher",
+    "version": "1.0.0",
+    "main": "electron/main.cjs",
+    "type": "commonjs",
+    "scripts": {
+        "dev": "concurrently -k \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^6.1.1",
+        "concurrently": "^10.0.5",
+        "electron": "^44.5.1",
+        "vite": "^8.3.2",
+        "wait-on": "^9.5.1"
+    },
+    "dependencies": {
+        "react": "^19.3.0",
+        "react-dom": "^19.3.0"
+    }
+}
